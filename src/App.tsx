@@ -1,48 +1,26 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Accordion } from "./components/Accordion/Accordion";
+import { Rating } from "./components/Accordion/Rating/Rating";
 
 function App() {
   return (
     <div className="App">
       <AppTitle />
-      <Rating />
+
+      <Rating value={"bkj"}/>
+      <Rating value={2}/>
+      <Rating value={3}/>
+      <Rating value={4}/>
+      <Rating value={5}/>
+      <Rating value={0}/>
       <Accordion />
     </div>
   );
 }
 
-function Rating() {
-  return (
-    <div>
-      <Star />
-      <Star />
-      <Star />
-      <Star />
-      <Star />
-    </div>
-  );
-}
 
-function Star() {
-  return (
-    <div>Star</div>
-  );
-}
-
-function Accordion() {
-  return (
-    <div>
-      <h3>Menu </h3>
-
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
-    </div>
-  );
-}
 
 function AppTitle() {
   return <h3>This is APP component</h3>
