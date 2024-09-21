@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <PageTitle title="This is APP component"/>
 
-
       <Accordion titleValue="Menu" collapsed={true}/>
 
       <Accordion titleValue="Users" collapsed={false}/>
