@@ -1,3 +1,5 @@
+import { Button } from "../../stories/Button";
+
 type AccordionPropsType = {
   titleValue: string;
   collapsed: boolean;
@@ -31,6 +33,8 @@ function AccordionBody() {
       <li>1</li>
       <li>2</li>
       <li>3</li>
+
+      <Button label="Button Label"/> 
     </ul>
   );
 }
